@@ -1,11 +1,11 @@
-import Contenders from './components/contenders';
+import Entries from './components/entries';
 import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Contenders />
+      <Entries />
     );
   }
 }
