@@ -1,11 +1,18 @@
-import Entries from './components/entries';
+import EntriesContainer from './containers/entries-container';
 import React, { Component } from 'react';
+import store from './store';
+import { Provider } from 'react-redux';
 import './App.css';
+
+
+// const store = createStore(rootReducer);
 
 class App extends Component {
   render() {
     return (
-      <Entries />
+      <Provider store={store}>
+        <EntriesContainer />
+      </Provider>
     );
   }
 }
